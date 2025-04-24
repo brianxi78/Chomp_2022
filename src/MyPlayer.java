@@ -11,6 +11,15 @@ public class MyPlayer {
          * This code will run just once, when the game opens.
          * Add your code here.
          */
+
+        for (int x = 1; x < 4; x++){
+            for(int j=0; j < 4; j++){
+                for (int i =0; i < 4; i++){
+                    System.out.println(x + " " + j + " " + i);
+                }
+            }
+        }
+
     }
 
     public Point move(Chip[][] pBoard) {
