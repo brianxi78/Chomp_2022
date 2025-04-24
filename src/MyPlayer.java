@@ -12,14 +12,15 @@ public class MyPlayer {
          * Add your code here.
          */
 
-        for (int x = 1; x < 4; x++){
+        for (int i = 1; i < 4; i++){
             for(int j=0; j < 4; j++){
-                for (int i =0; i < 4; i++){
-                    System.out.println(x + " " + j + " " + i);
+                for (int k =0; k < 4; k++){
+                    if(i >= j && j >= k) {
+                        System.out.println(i + " " + j + " " + k);
+                    }
                 }
             }
         }
-
     }
 
     public Point move(Chip[][] pBoard) {
